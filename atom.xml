@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nathanchenstudio.github.io</id>
     <title>NCHStudio</title>
-    <updated>2020-05-12T02:19:31.937Z</updated>
+    <updated>2020-05-12T02:24:25.326Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nathanchenstudio.github.io"/>
     <link rel="self" href="https://nathanchenstudio.github.io/atom.xml"/>
@@ -47,7 +47,9 @@
 <blockquote>
 <p>python3 unfrozen_binary_<name>.py xxxx.exe</p>
 </blockquote>
-<p>就会将此exe解包到当前文件夹下。这时再使用<a href="https://sourceforge.net/projects/easypythondecompiler/">Easy Python Decompiler</a>等工具，就可以将pyc反编译成Python源代码了。</p>
+<p>就会将此exe解包到当前文件夹下。这时再使用<a href="https://sourceforge.net/projects/easypythondecompiler/">Easy Python Decompiler</a>等工具，就可以将pyc反编译成Python源代码了。<br>
+<img src="https://nathanchenstudio.github.io/post-images/1589250156244.jpeg" alt="" loading="lazy"><br>
+<img src="https://nathanchenstudio.github.io/post-images/1589250171011.jpeg" alt="" loading="lazy"></p>
 <p>其他反编译工具：</p>
 <ul>
 <li><a href="https://github.com/NVISO-BE/decompile-py2exe">decompile-py2exe</a></li>
