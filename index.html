@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://nathanchenstudio.github.io/favicon.ico?v=1589187101329">
+<link rel="shortcut icon" href="https://nathanchenstudio.github.io/favicon.ico?v=1589249895914">
 <link rel="stylesheet" href="https://nathanchenstudio.github.io/styles/main.css">
 
 
@@ -29,7 +29,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://nathanchenstudio.github.io">
-        <img src="https://nathanchenstudio.github.io/images/avatar.png?v=1589187101329" class="site-logo">
+        <img src="https://nathanchenstudio.github.io/images/avatar.png?v=1589249895914" class="site-logo">
         <h1 class="site-title">NCHStudio</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -100,8 +100,15 @@
                   2020-05-11
                 </div>
                 <div class="post-abstract">
-                  <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+                  <p>将Python脚本打包成Windows下的单文件exe程序有这么几种方式：</p>
+<ul>
+<li><a href="https://www.py2exe.org/">py2exe</a></li>
+<li><a href="https://anthony-tuininga.github.io/cx_Freeze/">cx_Freeze</a></li>
+<li><a href="https://pypi.org/project/bbfreeze/">bbfreeze</a></li>
+<li><a href="https://www.pyinstaller.org/">pyinstaller</a></li>
+</ul>
+<p>这几种方式打包出来的exe，都可以很方便的反编译出Python源代码。除非预先将py文件编译成pyd格式，也就是动态链接库格式，而pyd文件本质上就是个dll，要破解只能通过跟踪汇编代码，其反编译难度是相当高的。</p>
+<p>有个开源的反编译工具叫做<a href="https://github.com/ptynecki/unfrozen_binary">unfrozen_binary</a>，集成了以上4种打包方式的反编译。</p>
 
                 </div>
               </div>

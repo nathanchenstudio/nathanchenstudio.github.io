@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nathanchenstudio.github.io</id>
     <title>NCHStudio</title>
-    <updated>2020-05-11T10:07:10.360Z</updated>
+    <updated>2020-05-12T02:18:43.290Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nathanchenstudio.github.io"/>
     <link rel="self" href="https://nathanchenstudio.github.io/atom.xml"/>
@@ -16,30 +16,46 @@
         <link href="https://nathanchenstudio.github.io/post/decompile-python-exe/">
         </link>
         <updated>2020-05-11T08:51:38.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+        <summary type="html"><![CDATA[<p>将Python脚本打包成Windows下的单文件exe程序有这么几种方式：</p>
+<ul>
+<li><a href="https://www.py2exe.org/">py2exe</a></li>
+<li><a href="https://anthony-tuininga.github.io/cx_Freeze/">cx_Freeze</a></li>
+<li><a href="https://pypi.org/project/bbfreeze/">bbfreeze</a></li>
+<li><a href="https://www.pyinstaller.org/">pyinstaller</a></li>
+</ul>
+<p>这几种方式打包出来的exe，都可以很方便的反编译出Python源代码。除非预先将py文件编译成pyd格式，也就是动态链接库格式，而pyd文件本质上就是个dll，要破解只能通过跟踪汇编代码，其反编译难度是相当高的。</p>
+<p>有个开源的反编译工具叫做<a href="https://github.com/ptynecki/unfrozen_binary">unfrozen_binary</a>，集成了以上4种打包方式的反编译。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+        <content type="html"><![CDATA[<p>将Python脚本打包成Windows下的单文件exe程序有这么几种方式：</p>
+<ul>
+<li><a href="https://www.py2exe.org/">py2exe</a></li>
+<li><a href="https://anthony-tuininga.github.io/cx_Freeze/">cx_Freeze</a></li>
+<li><a href="https://pypi.org/project/bbfreeze/">bbfreeze</a></li>
+<li><a href="https://www.pyinstaller.org/">pyinstaller</a></li>
+</ul>
+<p>这几种方式打包出来的exe，都可以很方便的反编译出Python源代码。除非预先将py文件编译成pyd格式，也就是动态链接库格式，而pyd文件本质上就是个dll，要破解只能通过跟踪汇编代码，其反编译难度是相当高的。</p>
+<p>有个开源的反编译工具叫做<a href="https://github.com/ptynecki/unfrozen_binary">unfrozen_binary</a>，集成了以上4种打包方式的反编译。</p>
 <!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+<p>unfrozen_binary 包括:</p>
+<ul>
+<li><code>unfrozen_binary_py2exe.py</code> - 反编译 py2exe 文件,</li>
+<li><code>unfrozen_binary_cx_Freeze.py</code> - 反编译 cx_Freeze 文件,</li>
+<li><code>unfrozen_binary_bbfreeze.py</code> - 反编译 bbfreeze 文件,</li>
+<li><code>unfrozen_binary_pyinstaller.py</code> - 反编译 PyInstaller 文件.</li>
+</ul>
+<p>使用方法很简单，运行：</p>
+<blockquote>
+<p>python3 unfrozen_binary_<name>.py xxxx.exe</p>
+</blockquote>
+<p>就会将此exe解包到当前文件夹下。这时再使用<a href="https://sourceforge.net/projects/easypythondecompiler/">Easy Python Decompiler</a>等工具，就可以将pyc反编译成Python源代码了。</p>
+<p>其他反编译工具：</p>
+<ul>
+<li><a href="https://github.com/NVISO-BE/decompile-py2exe">decompile-py2exe</a></li>
+<li><a href="https://sourceforge.net/projects/p2ebe/">Py2Exe Binary Editor</a></li>
+<li><a href="https://sourceforge.net/projects/py2exedumper/">Py2Exe Dumper</a></li>
+<li><a href="https://github.com/countercept/python-exe-unpacker">python-exe-unpacker</a></li>
+<li><a href="https://github.com/extremecoders-re/pyinstxtractor">PyInstaller Extractor</a></li>
+</ul>
 ]]></content>
     </entry>
 </feed>
