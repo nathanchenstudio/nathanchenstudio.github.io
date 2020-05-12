@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nathanchenstudio.github.io</id>
     <title>NCHStudio</title>
-    <updated>2020-05-12T02:51:19.833Z</updated>
+    <updated>2020-05-12T03:26:12.577Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nathanchenstudio.github.io"/>
     <link rel="self" href="https://nathanchenstudio.github.io/atom.xml"/>
@@ -10,6 +10,23 @@
     <logo>https://nathanchenstudio.github.io/images/avatar.png</logo>
     <icon>https://nathanchenstudio.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, NCHStudio</rights>
+    <entry>
+        <title type="html"><![CDATA[惠普GT5810打印机维修记]]></title>
+        <id>https://nathanchenstudio.github.io/post/hp-gt5810-printer-repair-log/</id>
+        <link href="https://nathanchenstudio.github.io/post/hp-gt5810-printer-repair-log/">
+        </link>
+        <updated>2020-05-12T02:55:23.000Z</updated>
+        <content type="html"><![CDATA[<p>朋友送的一台HP GT5810打印机一直处于尘封中，前两天心血来潮想打印东西，拆出来装上缺发现无法打印。连电脑能正常识别，就是打印什么都是空白的。</p>
+<p>清洗打印头、墨仓加墨，周折许久才发现墨仓与打印头之间的联供管道里面有空气，导致打印头无法吸墨。找到了原因，维修方法缺很难找。先是在谷歌上找到了油管上的维修视频：</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N0qE79tGYp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>这样拆机很麻烦，搜索了半天找到了一个国内的维修视频：</p>
+<iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=d0774taejhs" allowFullScreen="true"></iframe>
+<p>于是在淘宝中搜索“GT5810 吸墨”，只有4个结果。选了最近的上海卖家，下单第二天就到货。<br>
+<img src="https://nathanchenstudio.github.io/post-images/1589253735216.jpg" alt="" loading="lazy"></p>
+<p>按视频中的操作试了几次，整个过程中问题不断。黑色管好了其他颜色又有空气，好不容易所有颜色的联供管里面看起来都没有空气可以正常打印了，打印几次后又断墨了，拆开一看又有空气了😂。</p>
+<p>结果：懒得折腾了。这款打印机的联供设计明显是有问题的，联供管太容易进空气了。一旦联供管进了空气，打印头就无法吸墨，导致打印空白。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[如何将exe反编译为Python源代码]]></title>
         <id>https://nathanchenstudio.github.io/post/decompile-exe-to-python-source-code/</id>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>如何将exe反编译为Python源代码 | NCHStudio</title>
+<title>惠普GT5810打印机维修记 | NCHStudio</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -28,15 +28,9 @@
 </script>
 
 
-    <meta name="description" content="将Python脚本打包成Windows下的单文件exe程序有这么几种方式：
-
-py2exe
-cx_Freeze
-bbfreeze
-pyinstaller
-
-这几种方式打包出来的exe，都可以很方便的反编译出Python源代码。除非预先将py..." />
-    <meta name="keywords" content="反编译,Python,py2exe,pyinstaller" />
+    <meta name="description" content="朋友送的一台HP GT5810打印机一直处于尘封中，前两天心血来潮想打印东西，拆出来装上缺发现无法打印。连电脑能正常识别，就是打印什么都是空白的。
+清洗打印头、墨仓加墨，周折许久才发现墨仓与打印头之间的联供管道里面有空气，导致打印头无法吸墨..." />
+    <meta name="keywords" content="GT5810,打印机,维修,联供,空气" />
   </head>
   <body>
     <div id="app" class="main">
@@ -111,68 +105,58 @@ pyinstaller
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">如何将exe反编译为Python源代码</h2>
-            <div class="post-date">2020-05-11</div>
+            <h2 class="post-title">惠普GT5810打印机维修记</h2>
+            <div class="post-date">2020-05-12</div>
             
-              <div class="feature-container" style="background-image: url('https://nathanchenstudio.github.io/post-images/decompile-exe-to-python-source-code.jpg')">
+              <div class="feature-container" style="background-image: url('https://nathanchenstudio.github.io/post-images/hp-gt5810-printer-repair-log.webp')">
               </div>
             
             <div class="post-content" v-pre>
-              <p>将Python脚本打包成Windows下的单文件exe程序有这么几种方式：</p>
-<ul>
-<li><a href="https://www.py2exe.org/">py2exe</a></li>
-<li><a href="https://anthony-tuininga.github.io/cx_Freeze/">cx_Freeze</a></li>
-<li><a href="https://pypi.org/project/bbfreeze/">bbfreeze</a></li>
-<li><a href="https://www.pyinstaller.org/">pyinstaller</a></li>
-</ul>
-<p>这几种方式打包出来的exe，都可以很方便的反编译出Python源代码。除非预先将py文件编译成pyd格式，也就是动态链接库格式，而pyd文件本质上就是个dll，要破解只能通过跟踪汇编代码，其反编译难度是相当高的。</p>
-<p>有个开源的反编译工具叫做<a href="https://github.com/ptynecki/unfrozen_binary">unfrozen_binary</a>，集成了以上4种打包方式的反编译。</p>
-<!-- more -->
-<p>unfrozen_binary 包括:</p>
-<ul>
-<li><code>unfrozen_binary_py2exe.py</code> - 反编译 py2exe 文件,</li>
-<li><code>unfrozen_binary_cx_Freeze.py</code> - 反编译 cx_Freeze 文件,</li>
-<li><code>unfrozen_binary_bbfreeze.py</code> - 反编译 bbfreeze 文件,</li>
-<li><code>unfrozen_binary_pyinstaller.py</code> - 反编译 PyInstaller 文件.</li>
-</ul>
-<p>使用方法很简单，运行：</p>
-<blockquote>
-<p>python3 unfrozen_binary_<name>.py xxxx.exe</p>
-</blockquote>
-<p>就会将此exe解包到当前文件夹下。这时再使用<a href="https://sourceforge.net/projects/easypythondecompiler/">Easy Python Decompiler</a>等工具，就可以将pyc反编译成Python源代码了。<br>
-<img src="https://nathanchenstudio.github.io/post-images/1589250156244.jpeg" alt="" loading="lazy"><br>
-<img src="https://nathanchenstudio.github.io/post-images/1589250171011.jpeg" alt="" loading="lazy"></p>
-<p>其他反编译工具：</p>
-<ul>
-<li><a href="https://github.com/NVISO-BE/decompile-py2exe">decompile-py2exe</a></li>
-<li><a href="https://sourceforge.net/projects/p2ebe/">Py2Exe Binary Editor</a></li>
-<li><a href="https://sourceforge.net/projects/py2exedumper/">Py2Exe Dumper</a></li>
-<li><a href="https://github.com/countercept/python-exe-unpacker">python-exe-unpacker</a></li>
-<li><a href="https://github.com/extremecoders-re/pyinstxtractor">PyInstaller Extractor</a></li>
-</ul>
+              <p>朋友送的一台HP GT5810打印机一直处于尘封中，前两天心血来潮想打印东西，拆出来装上缺发现无法打印。连电脑能正常识别，就是打印什么都是空白的。</p>
+<p>清洗打印头、墨仓加墨，周折许久才发现墨仓与打印头之间的联供管道里面有空气，导致打印头无法吸墨。找到了原因，维修方法缺很难找。先是在谷歌上找到了油管上的维修视频：</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N0qE79tGYp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>这样拆机很麻烦，搜索了半天找到了一个国内的维修视频：</p>
+<iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=d0774taejhs" allowFullScreen="true"></iframe>
+<p>于是在淘宝中搜索“GT5810 吸墨”，只有4个结果。选了最近的上海卖家，下单第二天就到货。<br>
+<img src="https://nathanchenstudio.github.io/post-images/1589253735216.jpg" alt="" loading="lazy"></p>
+<p>按视频中的操作试了几次，整个过程中问题不断。黑色管好了其他颜色又有空气，好不容易所有颜色的联供管里面看起来都没有空气可以正常打印了，打印几次后又断墨了，拆开一看又有空气了😂。</p>
+<p>结果：懒得折腾了。这款打印机的联供设计明显是有问题的，联供管太容易进空气了。一旦联供管进了空气，打印头就无法吸墨，导致打印空白。</p>
 
             </div>
             
               <div class="tag-container">
                 
-                  <a href="https://nathanchenstudio.github.io/tag/369AeEHP3/" class="tag">
-                    反编译
+                  <a href="https://nathanchenstudio.github.io/tag/10q1KxIa6/" class="tag">
+                    GT5810
                   </a>
                 
-                  <a href="https://nathanchenstudio.github.io/tag/QITSDiekEy/" class="tag">
-                    Python
+                  <a href="https://nathanchenstudio.github.io/tag/PwxV0Y7Wvx/" class="tag">
+                    打印机
                   </a>
                 
-                  <a href="https://nathanchenstudio.github.io/tag/L3MllVw3YO/" class="tag">
-                    py2exe
+                  <a href="https://nathanchenstudio.github.io/tag/e_04Lbjw6z/" class="tag">
+                    维修
                   </a>
                 
-                  <a href="https://nathanchenstudio.github.io/tag/934FS1ow7K/" class="tag">
-                    pyinstaller
+                  <a href="https://nathanchenstudio.github.io/tag/XFFNvlVopa/" class="tag">
+                    联供
+                  </a>
+                
+                  <a href="https://nathanchenstudio.github.io/tag/hmLmBELBA2/" class="tag">
+                    空气
                   </a>
                 
               </div>
             
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://nathanchenstudio.github.io/post/decompile-exe-to-python-source-code/">
+                  <h3 class="post-title">
+                    如何将exe反编译为Python源代码
+                  </h3>
+                </a>
+              </div>
             
 
             
